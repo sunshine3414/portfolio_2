@@ -39,19 +39,16 @@ import Privacy from "../../components/Privacy";
 
 export const headerIntroData = {
   title: {
-    de: "Hi, ich bin Alpay",
-    en: "Hi, I'm Alpay",
+    en: "Hi, I'm BRD",
   },
   subtitle: "Fullstack Developer ",
   description: {
-    de: "Ich bin Alpay, ein Fullstack-Entwickler mit dem Ziel, meine Karriere voranzutreiben und an inspirierenden Projekten teilzunehmen. Hier präsentiere ich meine Arbeiten und meine Leidenschaft für die Webentwicklung. Lassen Sie uns gemeinsam digitale Lösungen gestalten und die Zukunft formen!",
-    en: "I'm Alpay, a fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
+    en: "I'm Alpay, a front-end developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
   },
   buttons: [
     {
       name: "Contact",
       label: {
-        de: "Kontaktiere mich",
         en: "Contact me",
       },
       icon: FiMail,
@@ -60,7 +57,6 @@ export const headerIntroData = {
     {
       name: "Projects",
       label: {
-        de: "Meine Projekte",
         en: "My Projects",
       },
       icon: FiGithub,
@@ -72,25 +68,20 @@ export const headerIntroData = {
 
 export const projectsData = [
   {
-    title: "Tasty App",
-    description:
-      "Eine Rezepte App, die wir als Team mit React und der MealDB API gebaut haben. Ich war der Front-End Entwickler und habe Features wie Voice Search oder Print to PDF programmiert. Das Design wurde mit Figma erstellt. Die Website ist responsive und mobile-optimiert.",
+    title: "Fenix",
     description_EN:
-      "A recipe app that we built as a team with React and the MealDB API. I was the front-end developer and programmed features like voice search or print to PDF. The design was created with Figma. The website is responsive and mobile-optimized.",
+      "Fenix is a discord bot, created by BRD, he is cool programmer. I was made on 26 August, 2023 and officially Verified on 5 October 2023. I can perform various task involving Auto Moderation, AutoMod, Tickets etc.",
     technologies: [
-      { name: "Html", icon: htmlicon },
-      { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
-      { name: "REST Api", icon: apiicon },
-      { name: "React", icon: reacticon },
-      { name: "Figma", icon: figmaicon },
       { name: "Canva", icon: canvaicon },
-      { name: "Netlify", icon: netlifyicon },
-      { name: "Trello", icon: trelloicon },
+      { name: "Axios", icon: axiosicon },
+      { name: "MongoDB", icon: mongodbicon },
+      { name: "Express", icon: expressiconwhite },
+      { name: "Node.js", icon: nodejsicon },
     ],
     image: tastyMockup,
-    deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
-    githuburl: "https://github.com/AlpayC/Frontend_Abschlussprojekt_Tasty",
+    deploymenturl: "https://discord.com/oauth2/authorize?client_id=1118722825562366063&scope=bot&permissions=1099511627775&scope=bot&redirect_url=https://discord.gg/a7a4mA5FEY&response_type=code",
+    githuburl: "https://fenix-dash.vercel.app/",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -101,29 +92,24 @@ export const projectsData = [
     },
   },
   {
-    title: "Silentmoon",
-    description:
-      "Eine Yoga und Meditations App, die wir als Team mit React, MongoDB, Express und Node.js gebaut haben. Meine Aufgabe als Gitmaster und Backend Entwickler bestand darin, das Backend mit Anbindung anhand einer Restful API zu programmieren und die Datenbank in MongoDB zu modellieren.",
+    title: "Elite Development",
     description_EN:
-      "A yoga and meditation app that we built as a team with React, MongoDB, Express and Node.js. My task as a gitmaster and backend developer was to program the backend with connection using a restful API and to model the database in MongoDB.",
+      "Elite Development Empowering 150+ happy clients since 25/10/2022. Specializes in custom Discord bot development (3+ verified bots), web development, and more. Passionate about collaboration, quality, and community. Let's chat!",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
       { name: "Spotify Api", icon: spotifyicon },
       { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
       { name: "Axios", icon: axiosicon },
       { name: "MongoDB", icon: mongodbicon },
       { name: "Express", icon: expressiconwhite },
       { name: "Node.js", icon: nodejsicon },
-      { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
     ],
     image: silentmoonMockup,
-    deploymenturl: "https://silentmoon-grpw.onrender.com/",
+    deploymenturl: "https://discord.com/invite/4u8xayHdTa",
     githuburl:
-      "https://github.com/AlpayC/Fullstack_Abschlussprojekt_SilentMoon",
+      "elitedevelopment.xyz",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -134,28 +120,23 @@ export const projectsData = [
     },
   },
   {
-    title: "Furniture Organizer",
-    description:
-      "Eine Möbel-Organizer App, die wir als Duo-Team mit React, MongoDB, Express und Node.js programmiert haben. Als Gitmaster habe ich die Verknüpfung des Frontends mit dem Backend und die Datenbankmodellierung übernommen. Die App ist responsive und mobile-optimiert.",
+    title: "ALPhA MUSIX",
     description_EN:
-      "A furniture organizer app that we programmed as a duo team with React, MongoDB, Express and Node.js. As a gitmaster, I took over the connection of the frontend to the backend and the database modeling. The app is responsive and mobile-optimized.",
+      "ALPhA MUSIX made history as Kerala's pioneering verified music bot on Discord, setting a new standard for audio entertainment in the region. This versatile bot boasts an impressive array of features, providing users with an all-encompassing musical experience. From playing music tracks from various sources to supporting interactive commands, ALPhA MUSIX has become a go-to choice for those seeking seamless audio playback. Its ability to seamlessly integrate with Discord servers has earned it a reputation as a reliable and feature-rich music bot. Whether you're hosting a gaming session, a virtual event, or simply enjoying music with friends, ALPhA MUSIX's diverse capabilities make it an essential addition to Discord communities across Kerala",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
       { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
+      { name: "Spotify Api", icon: spotifyicon },
       { name: "Axios", icon: axiosicon },
       { name: "MongoDB", icon: mongodbicon },
       { name: "Express", icon: expressiconwhite },
       { name: "Node.js", icon: nodejsicon },
-      { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
-      { name: "Trello", icon: trelloicon },
     ],
     image: instorMockup,
-    deploymenturl: "https://mern-haushaltsbuch.onrender.com/",
-    githuburl: "https://github.com/AlpayC/Furniture_MERN",
+    deploymenturl: "https://discord.com/api/oauth2/authorize?client_id=988395899619270716&permissions=36768832&scope=applications.commands%20bot",
+    githuburl: "http://alphamusix.xyz/",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -168,10 +149,7 @@ export const projectsData = [
 ] as const;
 
 export const liveTickerData = {
-  content: {
-    de: "Weitere Projekte auf Github",
-    en: "More Projects on Github",
-  },
+  content: "More Projects on my Server"
 } as const;
 
 export const skillsDataWeb = [
@@ -197,12 +175,6 @@ export const skillsDataWeb = [
         color: "#F7DF1E",
       },
       {
-        title: "TypeScript",
-        hash: "#TypeScript",
-        icon: typescripticon,
-        color: "#007ACC",
-      },
-      {
         title: "React",
         hash: "#React",
         icon: reacticon,
@@ -221,22 +193,10 @@ export const skillsDataWeb = [
         color: "#339933",
       },
       {
-        title: "Tailwind",
-        hash: "#Tailwind",
-        icon: tailwindcssicon,
-        color: "#38B2AC",
-      },
-      {
         title: "MongoDB",
         hash: "#MongoDB",
         icon: mongodbicon,
         color: "#449C45",
-      },
-      {
-        title: "Vue.js",
-        hash: "#Vue.js",
-        icon: vuejsicon,
-        color: "#4FC08D",
       },
       {
         title: "Express",
@@ -244,12 +204,18 @@ export const skillsDataWeb = [
         icon: [expressicon, expressiconwhite],
         color: ["#000000", "#FFFFFF"],
       },
-      {
-        title: "SASS/SCSS",
-        hash: "#SASS/SCSS",
-        icon: sassscssicon,
-        color: "#CC6699",
+    /*{
+        title: "Python",
+        hash: "#Python",
+        icon: pythonicon,
+        color: "#FFD43B",
       },
+      {
+        title: "Sql",
+        hash: "#Sql",
+        icon: sqlicon,
+        color: "#008080",
+      },*/
     ],
   },
 ] as const;
@@ -258,13 +224,24 @@ export const skillsDataDesign = [
   {
     skillsTitle: "Design",
     skills: [
-      { title: "Figma", hash: "#Figma", icon: figmaicon, color: "#F24E1E" },
       {
         title: "Adobe XD",
         hash: "#Adobe XD",
         icon: adobexdicon,
         color: "#FF61F6",
       },
+     /* {
+        title: "Adobe PsToch",
+        hash: "#Adobe PStoch",
+        icon: adobepstochicon,
+        color: "#FF61F6",
+      },
+      {
+        title: "Blender",
+        hash: "#Blender",
+        icon: blendericon,
+        color: "#FF61F6",
+      },*/
       { title: "Canva", hash: "#Canva", icon: canvaicon, color: "#00C4CC" },
     ],
   },
@@ -272,7 +249,7 @@ export const skillsDataDesign = [
 
 export const skillsDataCMS = [
   {
-    skillsTitle: "CMS",
+    skillsTitle: "SOCIAL MEDIA",
     skills: [
       {
         title: "WordPress",
@@ -297,16 +274,16 @@ export const skillsDataCMS = [
 ] as const;
 
 export const navLinks = [
-  { de: "Home", en: "Home", hash: "#home", icon: GoHome },
-  { de: "Skills", en: "Skills", hash: "#skills", icon: GoStack },
-  { de: "Projekte", en: "Projects", hash: "#projects", icon: GoProject },
-  { de: "Über mich", en: "About me", hash: "#about-me", icon: GoPerson },
-  { de: "Kontakt", en: "Contact", hash: "#contact", icon: GoMail },
+  { en: "Home", hash: "#home", icon: GoHome },
+  { en: "Skills", hash: "#skills", icon: GoStack },
+  { en: "Projects", hash: "#projects", icon: GoProject },
+  { en: "About me", hash: "#about-me", icon: GoPerson },
+  { en: "Contact", hash: "#contact", icon: GoMail },
 ] as const;
 
 export const FooterLinks = [
-  { de: "Impressum", en: "Imprint", hash: "#imprint", data: <Imprint /> },
-  { de: "Datenschutz", en: "Privacy", hash: "#privacy", data: <Privacy /> },
+ // { de: "Impressum", en: "Imprint", hash: "#imprint", data: <Imprint /> },
+  { en: "Privacy", hash: "#privacy", data: <Privacy /> },
 ] as const;
 
 export const sideBarRightMail = {
@@ -334,41 +311,17 @@ export const sideBarLeftSocials = [
 
 export const quotesData = [
   {
-    de: '"Es ist überhaupt nicht wichtig, es beim ersten Mal richtig zu machen. Es ist entscheidend, es beim letzten Mal richtig zu machen."',
     en: `"It's not at all important to get it right the first time. It's vitally important to get it right the last time."`,
     author: "Andrew Hunt",
   },
   {
-    de: '"Das Web ist wie eine Leinwand und der Code ist die Farbe. Erschaffe dein Meisterwerk."',
     en: `"The web is like a canvas, and code is the paint. Create your masterpiece."`,
   },
 ] as const;
 
 export const aboutMeData = {
-  title: "Über mich",
   title_EN: "About me",
-  description: "Ein paar Codeschnippsel über mich",
   description_EN: "A few code snippets about me",
-  paragraphs_DE: [
-    {
-      title: "Die Schaltkreise meines Herzens",
-      description:
-        "Wenn ich nicht in der digitalen Welt unterwegs bin, durchstreife ich die faszinierende Welt der Technik und Hardware. Schaltkreise und Lötstellen sind für mich wie Puzzleteile eines aufregenden Abenteuers.",
-      icon: hardwareicon,
-    },
-    {
-      title: "Auf der Überholspur des Lebens",
-      description:
-        "Neben dem Coden befinde ich mich gerne auf der Überholspur – im wahrsten Sinne des Wortes. Autos sind meine Leidenschaft, und ich genieße es, mit PS-starken Maschinen auf unbekannten Straßen unterwegs zu sein.",
-      icon: caricon,
-    },
-    {
-      title: "Entdeckungsfreude als Lebensmotto",
-      description:
-        "Meine Reise als Webentwickler ist nur ein Teil meines Lebenswegs. Ich lebe nach dem Motto, dass das Abenteuer erst beginnt, wenn man das Bekannte hinter sich lässt. Das Entdecken neuer Orte ist meine Form der kreativen Inspiration.",
-      icon: travelicon,
-    },
-  ],
   paragraphs_EN: [
     {
       title: "The Circuits of My Heart",
@@ -393,23 +346,19 @@ export const aboutMeData = {
 
 export const contactData = {
   title: {
-    de: "Kontakt",
     en: "Contact",
   },
   description: {
-    de: "Schreib mir eine Nachricht und ich melde mich bei dir.",
     en: "Write me a message and I will get back to you.",
   },
   inputfields: [
     {
       name: "name",
       placeholder: {
-        de: "Dein Name",
         en: "Your Name",
       },
       type: "text",
       validation: {
-        de: "Bitte gebe deinen Namen ein",
         en: "Please fill in your name",
       },
       pattern: "{2}",
@@ -417,12 +366,10 @@ export const contactData = {
     {
       name: "email",
       placeholder: {
-        de: "Deine E-Mail Adresse",
         en: "Your E-Mail",
       },
       type: "email",
       validation: {
-        de: "Bitte gebe deine Email ein",
         en: "Please fill in your email",
       },
       pattern: "[@]{4}",
@@ -430,12 +377,10 @@ export const contactData = {
     {
       name: "subject",
       placeholder: {
-        de: "Deine Betreff",
         en: "Your Subject",
       },
       type: "text",
       validation: {
-        de: "Bitte gebe einen Betreff ein",
         en: "Please fill in your subject",
       },
       pattern: "{10}",
@@ -443,20 +388,17 @@ export const contactData = {
   ],
   textarea: {
     placeholder: {
-      de: "Deine Nachricht",
       en: "Your Message",
     },
     name: "message",
     rows: 10,
     validation: {
-      de: "Bitte gebe deine Nachricht ein",
       en: "Please fill in your message",
     },
     pattern: "{10}",
   },
   button: {
     value: {
-      de: "Absenden",
       en: "Send",
     },
   },
@@ -469,11 +411,9 @@ export const contactData = {
   },
   privacyOptIn: {
     checkbox: {
-      de: "Ich stimme zu, dass Alpay meine personenbezogenen Daten (Name und E-Mail-Adresse) verwenden darf, um mit mir Kontakt aufzunehmen.",
       en: "I agree that Alpay may use my personal data (name and e-mail address) to contact me.",
     },
     description: {
-      de: "Durch Übermittlung dieser Anfrage bestätigen Sie, dass Sie die Datenschutzerklärung gelesen haben",
       en: "By submitting this request, you acknowledge that you have read the Private Policy",
     },
   },
@@ -481,26 +421,21 @@ export const contactData = {
 
 export const toastMessages = {
   loadingProject: {
-    de: "🦄 Die Live Demo wird gleich geöffnet. Server werden gestartet...",
     en: "🦄 The live demo will open shortly. Starting servers...",
   },
   successEmailSent: {
-    de: "🦄 Vielen Dank für deine Email. Ich werde mich schnellstmöglich bei dir melden",
     en: "🦄 Thank you for your email. I will get back to you as soon as possible",
   },
   failedEmailSent: {
-    de: "🦄 Leider hat der Versand deiner Email nicht geklappt. Bitte versuche es später noch einmal",
     en: "🦄 Unfortunately the sending of your email did not work. Please try again later",
   },
   failedValidationName: {
-    de: "Bitte gebe deinen Namen ein",
     en: "Please fill in your name",
   },
 } as const;
 
 export const buttonLabels = {
   language: {
-    de: "DE",
     en: "EN",
   },
 } as const;

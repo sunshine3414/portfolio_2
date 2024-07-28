@@ -1,9 +1,10 @@
 import React from "react";
+import { directionStyles } from "../assets/lib/data";
+
 import {
   widthStyles,
   spaceStyles,
   heightStyles,
-  directionStyles,
 } from "../assets/lib/data";
 
 interface DividerProps {

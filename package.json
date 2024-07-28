@@ -4,9 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -14,7 +13,7 @@
     "@motionone/utils": "^10.16.3",
     "@types/dotenv": "^8.2.0",
     "axios": "^1.5.1",
-    "dotenv": "^16.3.1",
+    "dotenv": "^16.4.5",
     "framer-motion": "^10.16.4",
     "gsap": "^3.12.2",
     "prism-react-renderer": "^2.0.6",
@@ -34,15 +33,15 @@
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
-    "@vitejs/plugin-react": "^4.0.3",
+    "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.15",
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "postcss": "^8.4.28",
-    "rollup-plugin-gzip": "^3.1.0",
+    "rollup-plugin-gzip": "^3.1.2",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.0.2",
-    "vite": "^4.4.5"
+    "vite": "^4.5.3"
   }
 }

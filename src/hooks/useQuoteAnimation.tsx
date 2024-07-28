@@ -1,13 +1,10 @@
 import { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { useLanguage } from "../context/language-context";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export function useQuoteAnimation(quoteElementSelector: string) {
-  const { language } = useLanguage();
-
   useEffect(() => {
     const h2Element = document.querySelector(quoteElementSelector);
 
@@ -72,5 +69,5 @@ export function useQuoteAnimation(quoteElementSelector: string) {
         },
       });
     }
-  }, [quoteElementSelector, language]);
+  }, [quoteElementSelector]);
 }

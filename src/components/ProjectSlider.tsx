@@ -1,23 +1,26 @@
 import bannerBg from "../assets/img/bannerbg.webp";
 import React, { useRef } from "react";
+import { Tooltip as ReactTooltip } from "react-tooltip";
 import Button from "./Button";
 import LiveTicker from "./ParallaxText";
-import { projectsData, toastMessages } from "../assets/lib/data";
+import { projectsData } from "../assets/lib/data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectCards, Pagination } from "swiper/modules";
-import { ToastContainer, toast } from "react-toastify";
-import { Tooltip as ReactTooltip } from "react-tooltip";
+import { ToastContainer } from "react-toastify";
 import { useSectionInView } from "../assets/lib/hooks";
-import { useLanguage } from "../context/language-context";
 import { motion, useScroll, useTransform } from "framer-motion";
 import "react-toastify/dist/ReactToastify.css";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import "swiper/css/pagination";
 
+const notifyServerRequest = () => {
+  // Placeholder function to simulate notifying the server
+  console.log("Notifying server...");
+};
+
 const ProjectSlider: React.FC = () => {
   const { ref } = useSectionInView("Projects");
-  const { language } = useLanguage();
   const animationReference = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: animationReference,
@@ -25,13 +28,6 @@ const ProjectSlider: React.FC = () => {
   });
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
-  const notifyServerRequest = () => {
-    if (language === "DE") {
-      toast.info(toastMessages.loadingProject.de);
-    } else {
-      toast.info(toastMessages.loadingProject.en);
-    }
-  };
 
   return (
     <React.Fragment>
@@ -73,12 +69,10 @@ const ProjectSlider: React.FC = () => {
             >
               <p className="text-[--white] mt-16 mb-6">
                 <span className="text-[--orange]">&lt;</span>
-                {language === "DE" ? "Projekte" : "Projects"}
+                Projects
                 <span className="text-[--orange]">/&gt;</span>
               </p>
-              <h2 className="text-[--white] mb-16">
-                {language === "DE" ? "Meine Projekte" : "My Projects"}
-              </h2>
+              <h2 className="text-[--white] mb-16">My Projects</h2>
             </motion.div>
             <Swiper
               effect={"cards"}
@@ -103,15 +97,9 @@ const ProjectSlider: React.FC = () => {
                   <div className=" w-[55%] flex flex-col gap-12 justify-between ">
                     <h2>{project.title}</h2>
 
-                    <p className="text-white">
-                      {language === "DE"
-                        ? project.description
-                        : project.description_EN}
-                    </p>
+                    <p className="text-white">{project.description}</p>
                     <div className="technologies">
-                      <h3>
-                        {language === "DE" ? "Technologien" : "Technologies"}
-                      </h3>
+                      <h3>Technologies</h3>
                       <div className="grid grid-cols-6 gap-10 p-4">
                         {project.technologies.map(
                           (technology, innerIndex: number) => (
@@ -185,15 +173,11 @@ const ProjectSlider: React.FC = () => {
                   />
                 </div>
                 <p className="text-white  max-lg:text-4xl">
-                  {language === "DE"
-                    ? project.description
-                    : project.description_EN}
+                  {project.description}
                 </p>
 
                 <div className="technologies">
-                  <h3 className="text-white">
-                    {language === "DE" ? "Technologien" : "Technologies"}
-                  </h3>
+                  <h3 className="text-white">Technologies</h3>
                   <div className="grid grid-cols-3 gap-10 p-4">
                     {project.technologies.map(
                       (technology, innerIndex: number) => (

@@ -2,7 +2,6 @@ import React from "react";
 
 import bannerBg from "../assets/img/bannerbg.webp";
 import { quotesData } from "../assets/lib/data";
-import { useLanguage } from "../context/language-context";
 import { useQuoteAnimation } from "../hooks/useQuoteAnimation";
 
 interface BannerProps {
@@ -16,11 +15,6 @@ const BannerQuote: React.FC<BannerProps> = ({
   quoteIndex,
   containerType,
 }) => {
-  const { language } = useLanguage();
-
-  const quoteTranslation =
-    language === "DE" ? quotesData[quoteIndex].de : quotesData[quoteIndex].en;
-
   useQuoteAnimation(`.${containerType}-container h2`);
 
   return style === "withBG" ? (
@@ -37,7 +31,7 @@ const BannerQuote: React.FC<BannerProps> = ({
         >
           <div className="quote-container rotate-3 flex items-center flex-col justify-center p-56 max-lg:p-20 ">
             <h2 className="text-[--white] text-center text-8xl mb-20 mt-20 max-lg:text-[3rem] max-lg:mb-10 max-lg:leading-tight">
-              {quoteTranslation}
+              {quotesData[quoteIndex].en}
             </h2>
             <p className="text-[--grey]">{quotesData[0].author}</p>
           </div>
@@ -50,7 +44,7 @@ const BannerQuote: React.FC<BannerProps> = ({
         <div className="h-[50vh] -rotate-3 flex justify-center items-center scale-110">
           <div className="statement-container rotate-3 flex items-center flex-col justify-center p-56 max-lg:p-20">
             <h2 className="text-[--black] text-center text-9xl mb-20 mt-20 max-lg:text-[3rem] max-lg:mb-10 max-lg:leading-tight">
-              {quoteTranslation}
+              {quotesData[quoteIndex].en}
             </h2>
           </div>
         </div>
