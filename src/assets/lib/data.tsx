@@ -318,7 +318,7 @@ export const sideBarLeftSocials = [
   {
     // link: "https://www.linkedin.com/in/alpay/",
     // icon: FiLinkedin,
-    // altimgname: "linkedin",
+    // altimgname: "linkedin",//
   },
   {
     link: "https://github.com/moonlight3414",
