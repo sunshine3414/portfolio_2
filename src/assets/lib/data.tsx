@@ -316,12 +316,12 @@ export const sideBarRightMail = {
 
 export const sideBarLeftSocials = [
   {
-    link: "https://www.linkedin.com/in/alpay/",
-    icon: FiLinkedin,
-    altimgname: "linkedin",
+    // link: "https://www.linkedin.com/in/alpay/",
+    // icon: FiLinkedin,
+    // altimgname: "linkedin",
   },
   {
-    link: "https://github.com/AlpayC",
+    link: "https://github.com/moonlight3414",
     icon: FiGithub,
     altimgname: "github",
   },
