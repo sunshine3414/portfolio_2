@@ -58,7 +58,7 @@ export default function ThemeSwitch() {
       >
         {theme === "light" ? <BsSun /> : <BsMoon />}
       </button>
-    {/*  <button
+     {/* <button
         className={`shortcut-btn fixed -z-10 right-10  w-[4rem] h-[4rem] bg-opacity-80 backdrop-blur-[0.5rem] border border-white border-opacity-40 shadow-2xl rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-105 transition-all dark:bg-gray-950 ${
           theme === "dark" ? "bg-[--darkblue]" : "bg-white"
         }
@@ -76,7 +76,7 @@ export default function ThemeSwitch() {
         }`}
         aria-label="My Github Profile"
       >
-        <Link
+         <Link
           to={sideBarLeftSocials[1].link}
           target="_blank"
           rel="noopener noreferrer"
@@ -84,7 +84,7 @@ export default function ThemeSwitch() {
           <BsGithub />
         </Link>
       </button>
-      <button
+       <button
         className={`shortcut-btn fixed -z-10  right-10  w-[4rem] h-[4rem] bg-opacity-80 backdrop-blur-[0.5rem] border border-white border-opacity-40 shadow-2xl rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-105 transition-all dark:bg-gray-950 ${
           theme === "dark" ? "bg-[--darkblue]" : "bg-white"
         }
@@ -108,7 +108,7 @@ export default function ThemeSwitch() {
         >
           <BsLinkedin />
         </Link>
-      </button>
+      </button> 
       <button
         className={`shortcut-btn fixed -z-10  right-10  w-[4rem] h-[4rem] bg-opacity-80 backdrop-blur-[0.5rem] border border-white border-opacity-40 shadow-2xl rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-105 transition-all dark:bg-gray-950 ${
           theme === "dark" ? "bg-[--darkblue]" : "bg-white"

@@ -39,8 +39,8 @@ import Privacy from "../../components/Privacy";
 
 export const headerIntroData = {
   title: {
-    de: "Hi, ich bin Ronald Maxim",
-    en: "Hi, I'm Ronald Maxim",
+    de: "Hi, ich bin Oleksandr Khomenko",
+    en: "Hi, I'm Oleksandr Khomenko",
   },
   subtitle: "Fullstack Developer ",
   description: {
@@ -48,15 +48,15 @@ export const headerIntroData = {
     en: "I'm Alpay, a fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
   },
   buttons: [
-    {
-      name: "Contact",
-      label: {
-        de: "Kontaktiere mich",
-        en: "Contact me",
-      },
-      icon: FiMail,
-      color: "main-btn",
-    },
+    // {
+    //   // name: "Contact",
+    //   // label: {
+    //   //   de: "Kontaktiere mich",
+    //   //   en: "Contact me",
+    //   // },
+    //   // icon: FiMail,
+    //   // color: "main-btn",
+    // },
     {
       name: "Projects",
       label: {
@@ -90,7 +90,7 @@ export const projectsData = [
     ],
     image: tastyMockup,
     deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
-    githuburl: "https://github.com/AlpayC/Frontend_Abschlussprojekt_Tasty",
+    githuburl: "https://github.com/rocktec57/tasty_food",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -123,7 +123,7 @@ export const projectsData = [
     image: silentmoonMockup,
     deploymenturl: "https://silentmoon-grpw.onrender.com/",
     githuburl:
-      "https://github.com/AlpayC/Fullstack_Abschlussprojekt_SilentMoon",
+      "https://github.com/rocktec57/silent",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -155,7 +155,7 @@ export const projectsData = [
     ],
     image: instorMockup,
     deploymenturl: "https://mern-haushaltsbuch.onrender.com/",
-    githuburl: "https://github.com/AlpayC/Furniture_MERN",
+    githuburl: "https://github.com/rocktec57/Instore",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -318,17 +318,17 @@ export const sideBarLeftSocials = [
   {
     // link: "https://www.linkedin.com/in/alpay/",
     // icon: FiLinkedin,
-    // altimgname: "linkedin",//
+    // altimgname: "linkedin",
   },
   {
-    link: "https://github.com/moonlight3414",
+    link: "https://github.com/rocktec57",
     icon: FiGithub,
     altimgname: "github",
   },
   {
-    link: "mailto:myemail@com",
-    icon: FiMail,
-    altimgname: "mail",
+    // link: "mailto:myemail@com",
+    // icon: FiMail,
+    // altimgname: "mail",
   },
 ] as const;
 
