@@ -19,7 +19,7 @@ const SiteBarLeft: React.FC = () => {
         <div className="w-[0.25rem] h-[40vh] bg-[--lightblue]"></div>
       </div>
       <div className="flex flex-col gap-4 mt-4">
-        {sideBarLeftSocials.map((social: SocialLink, index: number) => (
+        {/* {sideBarLeftSocials.map((social: SocialLink, index: number) => (
           <Link
             to={social.link}
             className="block mb-2 hover:scale-110"
@@ -42,7 +42,7 @@ const SiteBarLeft: React.FC = () => {
               />
             )}
           </Link>
-        ))}
+        ))} */}
       </div>
     </div>
   );
