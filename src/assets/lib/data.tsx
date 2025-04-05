@@ -454,12 +454,12 @@ export const contactData = {
     },
     pattern: "{10}",
   },
-  // button: {
-  //   value: {
-  //     de: "Absenden",
-  //     en: "Send",
-  //   },
-  // },
+  button: {
+    value: {
+      de: "Absenden",
+      en: "Send",
+    },
+  },
   icon: FiMail,
   iconcolor: "#FFFFFF",
   colors: {
