@@ -1,13 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { sideBarLeftSocials } from "../assets/lib/data";
+// import { Link } from "react-router-dom";
+// import { sideBarLeftSocials } from "../assets/lib/data";
 
-interface SocialLink {
-  link: string;
-  icon: string | React.FC<{ className: string }>;
-  iconcolor?: string;
-  altimgname: any;
-}
+// interface SocialLink {
+//   link: string;
+//   icon: string | React.FC<{ className: string }>;
+//   iconcolor?: string;
+//   altimgname: any;
+// }
 
 const SiteBarLeft: React.FC = () => {
   return (
